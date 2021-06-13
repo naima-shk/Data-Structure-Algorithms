@@ -5,4 +5,4 @@
  - JavaScript (For coding algorithms)
  - Node JS ( for runtime environment)
 
- ## Software neede d to run this app
+ ## Software needed to run this app
