@@ -12,9 +12,8 @@ function checkPrime(number) {
     }
     return true;
   }
-  
 }
-console.log(checkPrime(10))
+console.log(checkPrime(10));
 
 //let arr = [1, 8, 7, 3, 2, 9, 10, 12];
 /*arr.forEach(function  (element) {
