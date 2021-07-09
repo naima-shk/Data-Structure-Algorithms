@@ -31,12 +31,12 @@ class Stack {
       return this.items[this.size -1 ]
   }
  
-    
+  
 }
 
 
   let myStack = new  Stack()
- 
+  
   myStack.push(100)
   myStack.push(200)
  

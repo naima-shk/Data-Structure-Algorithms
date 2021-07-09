@@ -18,8 +18,12 @@ clear(){
   console.log('stack cleared..')
   return this.items
 }
-}
 
-let myStack = new  Stack()
-  console.log(items.toString());
-  //myStack.clear()
+
+//string method
+toStringMethod(){
+let str;
+str = this.items.toString();
+console.log(str);
+}
+}
