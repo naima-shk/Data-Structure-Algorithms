@@ -1,21 +1,53 @@
 //stack class
 class Stack {
-    //// Array is used to implement stack
+  //// Array is used to implement stack
   constructor() {
     this.items = [];
-     // Functions to be implemented
+    this.size = 5;
+    // Functions to be implemented
     // push(item)
     // pop()
     // peek()
     // printStack()
   }
- 
-  push(item) {
-    this.items.push(item);
+  //push algorithm
+
+  pushCustomMethod(item) {
+   
+      // this.items.push(item);
+      this.items.length = this.items.length + 1;
+      if (this.items.length > this.size){
+        console.log('overflow stack')
+      } else {
+          this.items.push(item);
+      
+      }
+    
+      
+
   }
-  pop() {
-    this.items.pop();
+
+  
+
+  //customInsertAtTheEnd(7);
+  //console.log(arr);
+  //popCustomMethod() {
+    //this.items.length = this.items.length - 1;
+
+   // for (let i = 0; i < this.items.length; i++) {
+     // console.log(this.items[i]);
+   // }
+  //}
+
+   popCustomMethod() {
+    if (this.size == 0) return undefined;
+    let deleteItem = this.items[this.size - 1];
+    this.size -= 1;
+    console.log(`${deleteItem} removed `);
+    return deleteItem;
   }
+  
+  
   //peek function
   peek() {
       // return the top most element from the stack
@@ -26,7 +58,7 @@ class Stack {
   isEmpty() {
       // return true if stack is empty
     if (this.items.length == 0)  
-     console.log(true);
+     console.log('true');
   }
   printStack() {
       
@@ -35,18 +67,22 @@ class Stack {
     }
   }
 }
+
 let myStack = new Stack();
 //adding elements to the stack
-myStack.push(10);
-myStack.push(20);
-myStack.push(30);
+console.log(myStack.pushCustomMethod(10));
+console.log(myStack.pushCustomMethod(20));
+console.log(myStack.pushCustomMethod(30));
+console.log(myStack.pushCustomMethod(40));
+//myStack.pushCustomMethod(30);
+//console.log(myStack.popCustomMethod(10));
 //printing the stack element
 //prints [10,20,30]
- //console.log(myStack.printStack());
- //return 30
- //console.log(myStack.peek());
- //return 30 and remove it from stack
+//console.log(myStack.printStack());
+//return 30
+//console.log(myStack.peek());
+//return 30 and remove it from stack
 //console.log(myStack.pop());
 //return [10,20]
 //console.log(myStack.printStack());
-console.log(myStack.isEmpty());
+//myStack.isEmpty();
