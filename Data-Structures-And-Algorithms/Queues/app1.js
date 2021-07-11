@@ -2,7 +2,7 @@
 
 //queue class
 class Queue {
-  //// Array is used to implement queue
+  // Array is used to implement queue
   constructor() {
     this.items = [];
   }
@@ -12,7 +12,7 @@ class Queue {
       console.log(this.items[i]);
     }
   }
-  //  size
+  //size
   size() {
     this.size = this.items.length;
     console.log(this.size);
